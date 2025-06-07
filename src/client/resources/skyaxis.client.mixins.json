@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "dev.siea.skyaxis.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"dev.siea.skyaxis.mixin.client.SkyAxisMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

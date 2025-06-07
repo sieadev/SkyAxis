@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "skyaxis",
+	"version": "${version}",
+	"name": "SkyAxis",
+	"description": "Modern Skyblock.",
+	"authors": [
+		"sieadev"
+	],
+	"contact": {
+		"homepage": "https://siea.dev/projects/skyaxis",
+		"sources": "https://github.com/sieadev/SkyAxis"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/modid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"dev.siea.skyaxis.SkyAxisClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "skyaxis.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"fabric": "*",
+		"java": ">=21",
+		"minecraft": "1.21.x"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
